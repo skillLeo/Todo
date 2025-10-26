@@ -26,11 +26,10 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::get('/', function () {
-    return view('dashboard');
-});
-
  
+
+Route::get('/', [TaskController::class, 'index'])->name('task.index');
+
 
 // Authentication Routes (Ensure Laravel Breeze/Jetstream is installed)
 
