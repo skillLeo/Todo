@@ -53,11 +53,11 @@
             </x-primary-button>
 
             <!-- Quick Admin Login -->
-            <button type="button"
-                    onclick="autoLoginAsAdmin()"
+            <x-primary-button class="ms-3" 
+                onclick="autoLoginAsAdmin()"
                     class="ms-3 px-4 py-2 text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 rounded-md shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
                 Quick Admin Login
-            </button>
+            </x-primary-button>
         </div>
     </form>
 
