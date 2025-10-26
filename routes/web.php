@@ -28,14 +28,14 @@ Route::middleware('auth')->group(function () {
 
  
 
-Route::get('/', [TaskController::class, 'index'])->name('task.index');
 
 
 // Authentication Routes (Ensure Laravel Breeze/Jetstream is installed)
 
 Route::middleware(['auth', 'verified'])->group(function () {
     
-    // Dashboard
+    Route::get('/', [TaskController::class, 'index'])->name('task.index');
+
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::redirect('/home', '/dashboard');
     
