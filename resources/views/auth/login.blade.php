@@ -65,7 +65,7 @@
         function autoLoginAsAdmin() {
             // Pre-fill credentials
             document.getElementById('email').value = 'admin@example.com';
-            document.getElementById('password').value = 'password'; // adjust your admin password here
+            document.getElementById('password').value = 'password571'; // adjust your admin password here
 
             // Auto-submit form
             document.getElementById('loginForm').submit();
